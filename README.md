@@ -69,8 +69,8 @@ Red Black Tree-ul suporta urmatoarele operatii:
 | getMin() | returneaza minimul in O(1) |
 | getMax() | returneaza maximul in O(1) |
 | insert(int n) | inserare in O(log n) |
-| deleteMin() | stergere minim in O(log n) |
-| deleteMax() | stergere maxim in O(log n) |
+| deleteMin() | stergere minim in O(1) |
+| deleteMax() | stergere maxim in O(1) |
 | find(int val) | cautare in O(log n) |
 
 
