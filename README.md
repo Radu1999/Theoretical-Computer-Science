@@ -43,8 +43,15 @@ Am scris programul testgenerator.cpp care genereaza 20 de teste in mod aleator f
  
  # Algoritm 1:
  
- Prima abordare foloseste MinMaxHeap. Astfel, insertia este O(loh n). stergerea elementului maxim si minim este O(log n), iar gasirea lor este o(1).
- Implementarea se bazeaza pe cea din repo-ul de git: [Min-Max Heap](https://github.com/frankpeng7/Min-Max-Heap). La ea am adaugat functia buildMinMaxHeap care construieste structura in O(n).
+ Prima abordare foloseste MinMaxHeap. MinMaxHeap-ul suporta urmatoarele operatii:
+ 
+| API | |
+| ------ | ------ |
+| getMin() | returneaza minimul in O(1) |
+| getMax() | returneaza maximul in O(1) |
+| insert(T newValue) | inserare in O(log n) |
+| deleteMin() | stergere minim in O(log n) |
+| deleteMax() | stergere maxim in O(log n) |
 
 | Fisier | Rol |
 | ------ | ------ |
@@ -54,6 +61,18 @@ Am scris programul testgenerator.cpp care genereaza 20 de teste in mod aleator f
  
  # Algoritm 2:
 A doua abordare foloseste Red Black Tree modificat, ajungandu-se la stergere maxim si minim in O(log n) si gasire in O(1). Implementarea se bazeaza pe [Red-Black Tree | Set 3 (Delete)](https://www.geeksforgeeks.org/red-black-tree-set-3-delete-2/) . Am modificat structura astfel incat sa functioneze si cu duplicate. Pentru gasire maxim si minim tin 2 pointeri la nodurile respective(maximum si minimum) si monitorizez orice operatie unde are trebui sa ii repozitionez (insert, delete).
+
+Red Black Tree-ul suporta urmatoarele operatii:
+ 
+| API | |
+| ------ | ------ |
+| getMin() | returneaza minimul in O(1) |
+| getMax() | returneaza maximul in O(1) |
+| insert(int n) | inserare in O(log n) |
+| deleteMin() | stergere minim in O(log n) |
+| deleteMax() | stergere maxim in O(log n) |
+| find(int val) | cautare in O(log n) |
+
 
   | Fisier | Rol |
 | ------ | ------ |
@@ -82,4 +101,3 @@ make clean
 ```
 
 Github: [Theoretical Computer Science](https://github.com/Radu1999/Theoretical-Computer-Science)
-
