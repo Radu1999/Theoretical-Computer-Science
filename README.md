@@ -9,7 +9,7 @@
 Sablon test intrare:
   - Pe prima linie se afla numarul de rankuri n.
   - Pe a doua linie se afla n rank-uri (nr naturale). Pe a 3-a linie se va afla numarul de operatii k. 
-  - Pe urmatoarele k linii se vor afla operatiile ce neceseita efectuare.
+  - Pe urmatoarele k linii se vor afla operatiile ce necesita efectuare.
 # in:
 	5
     23 12 33 7 19
