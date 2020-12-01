@@ -20,4 +20,4 @@ algo2_test.o: algo2_test.cpp algo2.o
 
 .PHONY: clean
 clean:
-	rm -rf *.o test1 test2
+	rm -rf *.gch *.o test1 test2
